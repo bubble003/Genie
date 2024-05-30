@@ -13,12 +13,12 @@ const MobileNav = () => {
 
   return (
     <header className="flex-between fixed h-16 w-full border-b-4 border-purple-100 bg-white p-5 lg:hidden">
-      <Link href="/" className="flex items-center gap-2 md:py-2">
+      <Link href="/" className="flex items-center justify-center md:py-2">
         <Image
-          src="/assets/images/logo-text.svg"
+          src="/assets/images/logo-icon.png"
           alt="logo"
-          width={180}
-          height={28}
+          width={80}
+          height={40}
         />
       </Link>
 
@@ -39,12 +39,12 @@ const MobileNav = () => {
             <SheetContent className="focus:ring-0 focus-visible:ring-transparent focus:ring-offset-0 focus-visible:ring-offset-0 focus-visible:outline-none focus-visible:border-none !important sm:w-64">
               <>
                 <Image
-                  src="/assets/images/logo-text.svg"
+                  src="/assets/images/logo-icon.png"
                   alt="logo"
-                  width={152}
-                  height={23}
+                  width={80}
+                  height={40}
+                  className="cursor-pointer"
                 />
-
                 <ul className="mt-8 flex w-full flex-col items-start gap-5">
                   {navLinks.map((link) => {
                     const isActive = link.route === pathname;

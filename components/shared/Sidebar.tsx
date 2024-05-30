@@ -15,12 +15,12 @@ const Sidebar = () => {
   return (
     <aside className="hidden h-screen w-72 bg-white p-5 shadow-md shadow-purple-200/50 lg:flex">
       <div className="flex size-full flex-col gap-4">
-        <Link href="/" className="flex items-center gap-2 md:py-2">
+        <Link href="/" className="flex items-center justify-center md:py-2">
           <Image
-            src="/assets/images/logo-text.svg"
+            src="/assets/images/logo-icon.png"
             alt="logo"
-            width={180}
-            height={28}
+            width={130}
+            height={40}
           />
         </Link>
 
